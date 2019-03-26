@@ -13,4 +13,4 @@ This is a Self Organising Map implement on Credit Card Fraud  Detection using an
 After plotting SOM using matplotlib library in python its look like this black portion is the fraud area and white is the normal card information. In this dataset, there have fifteen input features. I am making ten by ten grid for SOM (Self Organising Map). Som is one of the most powerful clustering technique for unsupervised learning.Here in this repository, i build my own Self Organizing Map From Scratch using an Unsupervised dataset for making a robust Credit Card Fraud Detection Model.
 
 <h3>Visualization</h3>
-<img src="images/download.png">
+<img src="Images/download.png">
