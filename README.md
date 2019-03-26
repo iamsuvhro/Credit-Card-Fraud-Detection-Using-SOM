@@ -6,22 +6,11 @@
 
 <h2>Credit Card Fraud Detection</h2>
 
+In this dataset here have lots of customers card data with unlabeled. Basically this is a Unsupervised datset so we have to find how much fraud here have in the dataset.
 
 
+This is a Self Organising Map implement on Credit Card Fraud  Detection using an Unlabeled or Unsupervised dataset.
+After plotting SOM using matplotlib library in python its look like this black portion is the fraud area and white is the normal card information. In this dataset, there have fifteen input features. I am making ten by ten grid for SOM (Self Organising Map). Som is one of the most powerful clustering technique for unsupervised learning.Here in this repository, i build my own Self Organizing Map From Scratch using an Unsupervised dataset for making a robust Credit Card Fraud Detection Model.
 
-
-
-This is a Self Organising Map implement on Credit Card Fraud  Detection using an Unlabeled or Unsupervised dataset .
-After plotting SOM using matplotlib library in python its look like this black portion is the fraud area and white is the normal card information. In this dataset, there have fifteen input features. I am making ten by ten grid for SOM (Self Organising Map). Som is one of the most powerful clustering technique for unsupervised learning.
-
-
-
-Github Repo:
-
-
-
-https://github.com/suvhradipghosh07/Credit-Card-Fraud-Detection-Using-SOM
-
-Here in this repository, i build my own Self Organizing Map From Scratch using an Unsupervised dataset for making a robust Credit Card Fraud Detection Model
-
- #deeplearning #github #neuralnetwork #unsupervisedlearning #matplotlib #repository
+<h3>Visualization</h3>
+<img src="images/download.png">
