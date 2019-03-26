@@ -22,6 +22,7 @@ som.train_random(data = x, num_iteration = 100)
 
 ```
 <h3>Visualizing the results</h3>
+
 ```
 from pylab import bone, pcolor, colorbar, plot, show
 bone()
