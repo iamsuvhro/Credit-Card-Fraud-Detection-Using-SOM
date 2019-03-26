@@ -21,4 +21,24 @@ som.random_weights_init(x)
 som.train_random(data = x, num_iteration = 100)
 
 ```
+<h3>Visualizing the results</h3>
+```
+from pylab import bone, pcolor, colorbar, plot, show
+bone()
+pcolor(som.distance_map().T)
+colorbar()
+markers = ['o', 's']
+colors = ['r', 'g']
+for i, n in enumerate(x):
+    w = som.winner(n)
+    plot(w[0] + 0.5,
+         w[1] + 0.5,
+         markers[y[i]],
+         markeredgecolor = colors[y[i]],
+         markerfacecolor = 'None',
+         markersize = 10,
+         markeredgewidth = 2)
+show()
+
+```
 <img src="Images/download.png">
