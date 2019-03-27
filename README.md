@@ -15,31 +15,31 @@ After plotting SOM using matplotlib library in python its look like this black p
 <h3>Training rhe model</h3>
 
 ```
-from minisom import MiniSom
-som = MiniSom(x = 10, y = 10, input_len = 15, sigma = 1.0, learning_rate = 0.5)
-som.random_weights_init(x)
-som.train_random(data = x, num_iteration = 100)
+>>>from minisom import MiniSom
+>>>som = MiniSom(x = 10, y = 10, input_len = 15, sigma = 1.0, learning_rate = 0.5)
+>>>som.random_weights_init(x)
+>>>som.train_random(data = x, num_iteration = 100)
 
 ```
 <h3>Visualizing the results</h3>
 
 ```
-from pylab import bone, pcolor, colorbar, plot, show
-bone()
-pcolor(som.distance_map().T)
-colorbar()
-markers = ['o', 's']
-colors = ['r', 'g']
-for i, n in enumerate(x):
-    w = som.winner(n)
-    plot(w[0] + 0.5,
+>>>from pylab import bone, pcolor, colorbar, plot, show
+>>>bone()
+>>>pcolor(som.distance_map().T)
+>>>colorbar()
+>>>markers = ['o', 's']
+>>>colors = ['r', 'g']
+>>>for i, n in enumerate(x):
+>>>    w = som.winner(n)
+>>>   plot(w[0] + 0.5,
          w[1] + 0.5,
          markers[y[i]],
          markeredgecolor = colors[y[i]],
          markerfacecolor = 'None',
          markersize = 10,
          markeredgewidth = 2)
-show()
+>>>show()
 
 ```
 <img src="Images/download.png">
